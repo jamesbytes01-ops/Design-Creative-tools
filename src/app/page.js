@@ -12,7 +12,12 @@ import {
   Cpu,
   Zap,
   Globe,
-  Sliders
+  Sliders,
+  MousePointer,
+  PenTool,
+  Box,
+  Check,
+  Star
 } from 'lucide-react';
 import ToolCard from '@/components/ui/ToolCard';
 import CategoryCard from '@/components/ui/CategoryCard';
@@ -38,28 +43,26 @@ export default function HomePage() {
           <div className={styles.heroContent}>
             {/* Hero Left Text & Actions */}
             <div className={styles.heroLeft}>
-              <div
-                className="badge badge-primary"
-                style={{ marginBottom: '1.25rem', padding: '0.35rem 0.85rem' }}
-              >
-                <Sparkles size={14} /> Premier Creative & Software Hub
+              <div className={styles.heroBadge}>
+                <span className={styles.pulseDot} />
+                <span>Premier Creative & Webroot Security Platform</span>
               </div>
 
-              <h1 className="h1-title" style={{ marginBottom: '1.25rem' }}>
-                Powerful Tools for <span className="text-gradient-creative">Creative Professionals</span>
+              <h1 className={styles.heroHeadline}>
+                Build & Protect Your <span className="text-gradient-creative">Creative Digital Ecosystem</span>
               </h1>
 
-              <p className="sub-text" style={{ marginBottom: '1.5rem', maxWidth: '560px' }}>
-                Discover design, creative, productivity and digital tools that help individuals and businesses create better work, faster.
+              <p className={styles.heroSubtext}>
+                Explore purpose-built design, 3D rendering, AI creation software, and enterprise-grade Webroot protection — curated for high-performing creators.
               </p>
 
               {/* Hero Action Buttons */}
               <div className={styles.heroCTAGroup}>
                 <Link href="/explore" className="btn btn-primary btn-lg">
-                  Explore Tools <ArrowRight size={18} />
+                  Explore Software Suite <ArrowRight size={18} />
                 </Link>
-                <Link href="/webroot" className="btn btn-secondary btn-lg" style={{ borderColor: 'var(--webroot-border)' }}>
-                  <ShieldCheck size={18} color="var(--webroot-primary)" /> Explore Webroot
+                <Link href="/webroot" className="btn btn-secondary btn-lg" style={{ borderColor: 'var(--webroot-border)', backgroundColor: '#FFFFFF' }}>
+                  <ShieldCheck size={18} color="var(--webroot-primary)" /> Webroot Products
                 </Link>
               </div>
 
@@ -68,7 +71,7 @@ export default function HomePage() {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '1.5rem',
+                  gap: '1.75rem',
                   marginTop: '2.5rem',
                   fontSize: '0.875rem',
                   color: 'var(--text-muted)',
@@ -77,65 +80,128 @@ export default function HomePage() {
                   width: '100%'
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                  <CheckCircle2 size={16} color="var(--primary-600)" /> Curated Software Suite
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontWeight: 600 }}>
+                  <CheckCircle2 size={16} color="var(--primary-600)" /> 100+ Verified Software Tools
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                  <CheckCircle2 size={16} color="var(--webroot-primary)" /> Webroot Integrated Security
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontWeight: 600 }}>
+                  <CheckCircle2 size={16} color="var(--webroot-primary)" /> Cloud Threat Shield 100%
                 </div>
               </div>
-            </div>
-
-            {/* Hero Right Composition - Abstract Software UI Visual */}
+            </div>            {/* Hero Right Composition - Commercial Enterprise Software & Security Showcase */}
             <div className={styles.heroVisualWrapper}>
-              <div className={styles.heroComposition}>
-                {/* Simulated App Header */}
-                <div className={styles.uiHeaderBar}>
-                  <div className={styles.windowDots}>
-                    <div className={`${styles.dot} ${styles.redDot}`} />
-                    <div className={`${styles.dot} ${styles.yellowDot}`} />
-                    <div className={`${styles.dot} ${styles.greenDot}`} />
-                  </div>
-                  <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)' }}>
-                    Creative Workstation 2026
-                  </div>
-                  <div className="badge badge-webroot" style={{ fontSize: '0.65rem' }}>
-                    <ShieldCheck size={10} /> Protected
-                  </div>
+              <div className={styles.heroGlowBackdrop} />
+
+              <div className={styles.commercialStage}>
+                {/* 2x2 Product Showcase Grid */}
+                <div className={styles.commercialCardGrid}>
+                  {/* Card 1: Figma */}
+                  <Link href="/explore?category=UI%2FUX%20Design" className={styles.productShowcaseCard}>
+                    <div>
+                      <div className={styles.cardHeaderRow}>
+                        <div className={`${styles.brandIconWrapper} ${styles.iconFigma}`}>
+                          <Layers size={22} />
+                        </div>
+                        <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>
+                          Top Rated
+                        </span>
+                      </div>
+                      <div className={styles.productName}>Figma Design Studio</div>
+                      <div className={styles.productCategory}>UI/UX Design & Tokens</div>
+                    </div>
+
+                    <div className={styles.productMetaFooter}>
+                      <div className={styles.ratingTag}>
+                        <Star size={13} fill="#F59E0B" /> 4.9 (1.2k)
+                      </div>
+                      <span style={{ fontWeight: 700, color: 'var(--primary-600)' }}>Free / Pro</span>
+                    </div>
+                  </Link>
+
+                  {/* Card 2: Adobe Suite */}
+                  <Link href="/explore?category=Photo%20Editing" className={styles.productShowcaseCard}>
+                    <div>
+                      <div className={styles.cardHeaderRow}>
+                        <div className={`${styles.brandIconWrapper} ${styles.iconAdobe}`}>
+                          <Sparkles size={22} />
+                        </div>
+                        <span className="badge badge-secondary" style={{ fontSize: '0.65rem' }}>
+                          Enterprise
+                        </span>
+                      </div>
+                      <div className={styles.productName}>Adobe Creative Cloud</div>
+                      <div className={styles.productCategory}>Photoshop & Firefly AI</div>
+                    </div>
+
+                    <div className={styles.productMetaFooter}>
+                      <div className={styles.ratingTag}>
+                        <Star size={13} fill="#F59E0B" /> 4.8 (2.4k)
+                      </div>
+                      <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Commercial</span>
+                    </div>
+                  </Link>
+
+                  {/* Card 3: Blender 3D */}
+                  <Link href="/explore?category=3D%20%26%20Animation" className={styles.productShowcaseCard}>
+                    <div>
+                      <div className={styles.cardHeaderRow}>
+                        <div className={`${styles.brandIconWrapper} ${styles.iconBlender}`}>
+                          <Box size={22} />
+                        </div>
+                        <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>
+                          Open Source
+                        </span>
+                      </div>
+                      <div className={styles.productName}>Blender 3D Suite</div>
+                      <div className={styles.productCategory}>Cycles Ray-Trace Engine</div>
+                    </div>
+
+                    <div className={styles.productMetaFooter}>
+                      <div className={styles.ratingTag}>
+                        <Star size={13} fill="#F59E0B" /> 5.0 (3.1k)
+                      </div>
+                      <span style={{ fontWeight: 700, color: 'var(--primary-600)' }}>Free</span>
+                    </div>
+                  </Link>
+
+                  {/* Card 4: AI Generators */}
+                  <Link href="/explore?category=AI%20Creative%20Tools" className={styles.productShowcaseCard}>
+                    <div>
+                      <div className={styles.cardHeaderRow}>
+                        <div className={`${styles.brandIconWrapper} ${styles.iconAI}`}>
+                          <Zap size={22} />
+                        </div>
+                        <span className="badge badge-secondary" style={{ fontSize: '0.65rem' }}>
+                          AI Powered
+                        </span>
+                      </div>
+                      <div className={styles.productName}>Midjourney AI</div>
+                      <div className={styles.productCategory}>Generative Art Engine</div>
+                    </div>
+
+                    <div className={styles.productMetaFooter}>
+                      <div className={styles.ratingTag}>
+                        <Star size={13} fill="#F59E0B" /> 4.9 (1.8k)
+                      </div>
+                      <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Subscription</span>
+                    </div>
+                  </Link>
                 </div>
 
-                {/* Main UI Workspace Layout Simulation */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', height: '100%' }}>
-                  <div className={styles.floatingCard} style={{ animationDelay: '0s' }}>
-                    <div style={{ fontSize: '1.75rem' }}>🎨</div>
-                    <div>
-                      <div style={{ fontWeight: 700, fontSize: '0.9375rem' }}>Figma Studio</div>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>UI/UX Vector Engine</div>
+                {/* Webroot Dedicated Security Feature Banner */}
+                <Link href="/webroot/antivirus" className={styles.webrootShowcaseBanner}>
+                  <div>
+                    <div className={styles.webrootBannerTitle}>
+                      Webroot® SecureAnywhere Threat Shield
+                    </div>
+                    <div className={styles.webrootBannerSub}>
+                      Real-time cloud endpoint defense with zero CPU rendering overhead.
                     </div>
                   </div>
 
-                  <div className={styles.floatingCard} style={{ animationDelay: '0.6s' }}>
-                    <div style={{ fontSize: '1.75rem' }}>🧊</div>
-                    <div>
-                      <div style={{ fontWeight: 700, fontSize: '0.9375rem' }}>Blender 3D</div>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Cycles Ray-Trace</div>
-                    </div>
+                  <div className={styles.webrootShieldBadge}>
+                    <ShieldCheck size={18} /> Active Defense
                   </div>
-
-                  <div className={styles.floatingCard} style={{ animationDelay: '1.2s', gridColumn: 'span 2', backgroundColor: '#F0FDF4', borderColor: 'var(--webroot-border)' }}>
-                    <div style={{ fontSize: '1.5rem', color: 'var(--webroot-primary)' }}>
-                      <ShieldCheck size={28} />
-                    </div>
-                    <div>
-                      <div style={{ fontWeight: 700, fontSize: '0.9375rem', color: 'var(--webroot-dark)' }}>
-                        Webroot SecureAnywhere Agent
-                      </div>
-                      <div style={{ fontSize: '0.75rem', color: 'var(--webroot-primary)' }}>
-                        Real-time threat shield active • 0% CPU impact
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

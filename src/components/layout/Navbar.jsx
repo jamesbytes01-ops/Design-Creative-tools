@@ -65,12 +65,11 @@ export default function Navbar({ onOpenSearch }) {
         <div className={styles.rightSection}>
           <button
             onClick={onOpenSearch}
-            className={styles.searchBtn}
+            className={styles.searchBtnIconOnly}
             aria-label="Open search dialog"
+            title="Search tools & security products"
           >
-            <Search size={16} />
-            <span style={{ display: 'var(--search-text-display, inline)' }}>Search tools...</span>
-            <kbd className={styles.searchKbd}>⌘K</kbd>
+            <Search size={20} />
           </button>
 
           <Link href="/contact" className="btn btn-primary btn-sm" style={{ display: 'inline-flex' }}>

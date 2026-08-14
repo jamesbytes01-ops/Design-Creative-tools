@@ -14,7 +14,11 @@ export default function ToolCard({ tool, onViewDetails }) {
   };
 
   return (
-    <div className={styles.card}>
+    <div
+      className={styles.card}
+      onClick={() => onViewDetails && onViewDetails(tool)}
+      style={{ cursor: 'pointer' }}
+    >
       <div>
         {/* Card Top Icon & Badges */}
         <div className={styles.cardTop}>

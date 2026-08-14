@@ -14,7 +14,11 @@ export default function WebrootProductCard({ product }) {
   const IconComponent = iconMap[product.icon] || ShieldCheck;
 
   return (
-    <div className={styles.card}>
+    <Link
+      href={`/webroot/${product.slug}`}
+      className={styles.card}
+      style={{ textDecoration: 'none', color: 'inherit', display: 'flex' }}
+    >
       <div>
         {/* Top Icon & Badge */}
         <div className={styles.topRow}>
@@ -51,11 +55,11 @@ export default function WebrootProductCard({ product }) {
             ))}
           </div>
 
-          <Link href={`/webroot/${product.slug}`} className="btn btn-webroot btn-sm">
+          <span className="btn btn-webroot btn-sm">
             Learn More <ArrowRight size={14} />
-          </Link>
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

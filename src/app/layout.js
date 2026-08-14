@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Design & Creative Tools Platform | Webroot Security Integration',
-  description: 'Discover, compare, and integrate premier digital design software, creative tools, and Webroot cybersecurity solutions.',
+  description: 'Discover, compare, and integrate premium digital design software, creative tools, and Webroot cybersecurity solutions.',
 };
 
 export default function RootLayout({ children }) {

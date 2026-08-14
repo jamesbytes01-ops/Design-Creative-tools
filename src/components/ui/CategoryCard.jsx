@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Palette, Layout, Image, Video, PenTool, Box, Sparkles, CheckCircle2, Shield, ArrowRight } from 'lucide-react';
+import { toolsData } from '@/data/toolsData';
+import { webrootProducts } from '@/data/webrootData';
 import styles from './CategoryCard.module.css';
 
 const iconMap = {
@@ -17,6 +19,13 @@ const iconMap = {
 export default function CategoryCard({ category }) {
   const IconComponent = iconMap[category.icon] || Palette;
   const isCybersecurity = category.id === 'cybersecurity';
+
+  // Calculate actual dynamic count from dataset
+  const actualCount = isCybersecurity
+    ? webrootProducts.length
+    : toolsData.filter(
+        (t) => t.category.toLowerCase() === category.name.toLowerCase()
+      ).length;
 
   return (
     <Link
@@ -39,7 +48,7 @@ export default function CategoryCard({ category }) {
       </div>
 
       <div className={styles.footer}>
-        <span>{category.toolCount} {isCybersecurity ? 'Webroot Suite Solutions' : 'Tools Available'}</span>
+        <span>{actualCount} {isCybersecurity ? 'Webroot Security Suites' : 'Curated Tools'}</span>
         <ArrowRight size={16} />
       </div>
     </Link>

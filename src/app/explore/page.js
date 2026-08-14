@@ -13,8 +13,9 @@ function ExploreContent() {
   const searchParams = useSearchParams();
   const initialCategory = searchParams.get('category') || 'All';
   const initialPricing = searchParams.get('pricing') || 'All';
+  const initialSearch = searchParams.get('search') || '';
 
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(initialSearch);
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedPricing, setSelectedPricing] = useState(initialPricing);
   const [sortBy, setSortBy] = useState('rating');

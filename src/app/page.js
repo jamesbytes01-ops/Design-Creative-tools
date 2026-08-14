@@ -45,7 +45,7 @@ export default function HomePage() {
             <div className={styles.heroLeft}>
               <div className={styles.heroBadge}>
                 <span className={styles.pulseDot} />
-                <span>Premier Creative & Webroot Security Platform</span>
+                <span>Premium Creative & Webroot Security Platform</span>
               </div>
 
               <h1 className={styles.heroHeadline}>
@@ -95,94 +95,94 @@ export default function HomePage() {
                 {/* 2x2 Product Showcase Grid */}
                 <div className={styles.commercialCardGrid}>
                   {/* Card 1: Figma */}
-                  <Link href="/explore?category=UI%2FUX%20Design" className={styles.productShowcaseCard}>
+                  <Link href="/explore?search=Figma" className={styles.productShowcaseCard}>
                     <div>
                       <div className={styles.cardHeaderRow}>
                         <div className={`${styles.brandIconWrapper} ${styles.iconFigma}`}>
                           <Layers size={22} />
                         </div>
                         <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>
-                          Top Rated
+                          Industry Standard
                         </span>
                       </div>
-                      <div className={styles.productName}>Figma Design Studio</div>
-                      <div className={styles.productCategory}>UI/UX Design & Tokens</div>
+                      <div className={styles.productName}>Figma</div>
+                      <div className={styles.productCategory}>UI/UX Design & Prototyping</div>
                     </div>
 
                     <div className={styles.productMetaFooter}>
                       <div className={styles.ratingTag}>
-                        <Star size={13} fill="#F59E0B" /> 4.9 (1.2k)
+                        <Star size={13} fill="#F59E0B" /> 4.9 (3.4k)
                       </div>
-                      <span style={{ fontWeight: 700, color: 'var(--primary-600)' }}>Free / Pro</span>
+                      <span style={{ fontWeight: 700, color: 'var(--primary-600)' }}>Freemium</span>
                     </div>
                   </Link>
 
-                  {/* Card 2: Adobe Suite */}
-                  <Link href="/explore?category=Photo%20Editing" className={styles.productShowcaseCard}>
+                  {/* Card 2: Adobe Photoshop */}
+                  <Link href="/explore?search=Photoshop" className={styles.productShowcaseCard}>
                     <div>
                       <div className={styles.cardHeaderRow}>
                         <div className={`${styles.brandIconWrapper} ${styles.iconAdobe}`}>
                           <Sparkles size={22} />
                         </div>
                         <span className="badge badge-secondary" style={{ fontSize: '0.65rem' }}>
-                          Enterprise
+                          Pro Choice
                         </span>
                       </div>
-                      <div className={styles.productName}>Adobe Creative Cloud</div>
-                      <div className={styles.productCategory}>Photoshop & Firefly AI</div>
+                      <div className={styles.productName}>Adobe Photoshop</div>
+                      <div className={styles.productCategory}>Photo Editing & AI Compositing</div>
                     </div>
 
                     <div className={styles.productMetaFooter}>
                       <div className={styles.ratingTag}>
-                        <Star size={13} fill="#F59E0B" /> 4.8 (2.4k)
+                        <Star size={13} fill="#F59E0B" /> 4.9 (8.9k)
                       </div>
-                      <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Commercial</span>
+                      <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Paid</span>
                     </div>
                   </Link>
 
-                  {/* Card 3: Blender 3D */}
-                  <Link href="/explore?category=3D%20%26%20Animation" className={styles.productShowcaseCard}>
+                  {/* Card 3: Blender */}
+                  <Link href="/explore?search=Blender" className={styles.productShowcaseCard}>
                     <div>
                       <div className={styles.cardHeaderRow}>
                         <div className={`${styles.brandIconWrapper} ${styles.iconBlender}`}>
                           <Box size={22} />
                         </div>
                         <span className="badge badge-primary" style={{ fontSize: '0.65rem' }}>
-                          Open Source
+                          3D Standard
                         </span>
                       </div>
-                      <div className={styles.productName}>Blender 3D Suite</div>
-                      <div className={styles.productCategory}>Cycles Ray-Trace Engine</div>
+                      <div className={styles.productName}>Blender 3D</div>
+                      <div className={styles.productCategory}>3D Modeling & Cycles Render</div>
                     </div>
 
                     <div className={styles.productMetaFooter}>
                       <div className={styles.ratingTag}>
-                        <Star size={13} fill="#F59E0B" /> 5.0 (3.1k)
+                        <Star size={13} fill="#F59E0B" /> 4.9 (4.2k)
                       </div>
                       <span style={{ fontWeight: 700, color: 'var(--primary-600)' }}>Free</span>
                     </div>
                   </Link>
 
-                  {/* Card 4: AI Generators */}
-                  <Link href="/explore?category=AI%20Creative%20Tools" className={styles.productShowcaseCard}>
+                  {/* Card 4: Midjourney */}
+                  <Link href="/explore?search=Midjourney" className={styles.productShowcaseCard}>
                     <div>
                       <div className={styles.cardHeaderRow}>
                         <div className={`${styles.brandIconWrapper} ${styles.iconAI}`}>
                           <Zap size={22} />
                         </div>
                         <span className="badge badge-secondary" style={{ fontSize: '0.65rem' }}>
-                          AI Powered
+                          AI Leader
                         </span>
                       </div>
-                      <div className={styles.productName}>Midjourney AI</div>
-                      <div className={styles.productCategory}>Generative Art Engine</div>
+                      <div className={styles.productName}>Midjourney</div>
+                      <div className={styles.productCategory}>AI Image & Concept Generator</div>
                     </div>
 
                     <div className={styles.productMetaFooter}>
                       <div className={styles.ratingTag}>
-                        <Star size={13} fill="#F59E0B" /> 4.9 (1.8k)
+                        <Star size={13} fill="#F59E0B" /> 4.7 (2.1k)
                       </div>
-                      <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Subscription</span>
+                      <span style={{ fontWeight: 700, color: 'var(--text-primary)' }}>Paid</span>
                     </div>
                   </Link>
                 </div>

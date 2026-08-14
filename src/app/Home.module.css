@@ -1,8 +1,8 @@
 /* Homepage Specific CSS Module */
 .heroSection {
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5.5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.07) 0%, rgba(16, 185, 129, 0.05) 40%, rgba(255, 255, 255, 0) 70%),
               var(--bg-primary);
   border-bottom: 1px solid var(--border-light);
@@ -41,7 +41,7 @@
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.01em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
   box-shadow: 0 2px 8px rgba(99, 102, 241, 0.06);
 }
 

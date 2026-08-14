@@ -72,7 +72,7 @@ export default function ProductsPage() {
           </div>
           <h1 className="h1-title" style={{ fontSize: '2.5rem' }}>Software Products Marketplace</h1>
           <p className="sub-text" style={{ fontSize: '1rem', marginTop: '0.5rem', maxWidth: '640px' }}>
-            Explore premier digital tools and Webroot cybersecurity suites available for individuals, teams, and enterprises.
+            Explore premium digital tools and Webroot cybersecurity suites available for individuals, teams, and enterprises.
           </p>
 
           {/* Search & Tabs */}

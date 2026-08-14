@@ -1,0 +1,106 @@
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--webroot-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+}
+
+.card:hover {
+  border-color: var(--webroot-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-webroot-glow);
+}
+
+.topRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.iconWrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-md);
+  background-color: var(--webroot-light);
+  border: 1px solid var(--webroot-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--webroot-primary);
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--webroot-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.featureIcon {
+  color: var(--webroot-primary);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.bottomMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(5, 150, 105, 0.15);
+  margin-top: auto;
+}
+
+.platforms {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.platformTag {
+  background-color: #ffffff;
+  border: 1px solid var(--webroot-border);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 500;
+}

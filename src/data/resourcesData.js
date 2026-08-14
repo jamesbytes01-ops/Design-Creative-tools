@@ -1,0 +1,80 @@
+export const resourcesData = [
+  {
+    id: "design-systems-guide-2026",
+    title: "Building Modern Design Systems: Component Architecture & Tokens",
+    category: "Design",
+    date: "Aug 10, 2026",
+    readTime: "6 min read",
+    author: "Elena Rostova",
+    authorRole: "Principal UI Architect",
+    summary: "Discover how top software teams construct scalable design token pipelines, multi-platform UI component libraries, and automated design-to-code handoffs.",
+    content: "Design systems have evolved from simple style guides into comprehensive living ecosystems. In 2026, maintaining consistency across Web, iOS, and Android requires robust token pipelines and clear component boundaries...",
+    tags: ["Design Systems", "Figma", "Tokens", "UI Components"],
+    featured: true
+  },
+  {
+    id: "protecting-creative-assets-cybersecurity",
+    title: "Cybersecurity for Digital Creators: Safeguarding Client IP & Assets",
+    category: "Cybersecurity",
+    date: "Aug 05, 2026",
+    readTime: "8 min read",
+    author: "Marcus Vance",
+    authorRole: "Cybersecurity & Infrastructure Lead",
+    summary: "Why creative agencies and freelance designers are high-value targets for ransomware and identity theft—and how Webroot security shields your work.",
+    content: "Digital creators store gigabytes of high-value unreleased client intellectual property, NDA design files, and proprietary assets. A single ransomware attack or stolen credentials can devastate client trust...",
+    tags: ["Webroot", "Ransomware Defense", "Asset Protection", "Remote Work"],
+    featured: true
+  },
+  {
+    id: "ai-design-workflow-integration",
+    title: "Integrating AI Generators into Professional Illustration Pipelines",
+    category: "Creativity",
+    date: "Jul 28, 2026",
+    readTime: "5 min read",
+    author: "Sarah Lin",
+    authorRole: "Concept Artist & Illustrator",
+    summary: "How leading concept artists combine Midjourney and Photoshop Generative Fill with traditional vector paths without losing creative control.",
+    content: "AI image generators are not replacing illustrators—they are expanding moodboarding and texture iteration speed by 10x. Here is a step-by-step breakdown of incorporating AI into commercial artwork...",
+    tags: ["Generative AI", "Photoshop", "Concept Art", "Workflow"],
+    featured: false
+  },
+  {
+    id: "3d-webgraphics-spline-threejs",
+    title: "The Rise of Interactive 3D on the Web: Real-Time WebGL Design",
+    category: "Technology",
+    date: "Jul 18, 2026",
+    readTime: "7 min read",
+    author: "David K.",
+    authorRole: "Creative Technologist",
+    summary: "Explore how WebGL rendering engines like Spline and Blender enable immersive 3D hero experiences with 60fps performance across mobile browsers.",
+    content: "Flat vector design is sharing the stage with interactive real-time 3D environments. Thanks to modern GPU acceleration in browsers, 3D web experiences are faster than ever...",
+    tags: ["3D Web", "Blender", "Spline", "Interactive"],
+    featured: false
+  },
+  {
+    id: "lightweight-security-creative-laptops",
+    title: "Why Heavy Antivirus Kills 3D Render Speed (And How Cloud Security Solves It)",
+    category: "Cybersecurity",
+    date: "Jul 12, 2026",
+    readTime: "4 min read",
+    author: "Webroot Tech Desk",
+    authorRole: "Security Engineering",
+    summary: "Traditional antivirus signature updates choke RAM and CPU rendering threads. Learn how Webroot's cloud threat cloud eliminates render slowdowns.",
+    content: "When rendering a complex Blender scene or exporting 4K motion graphics, your CPU and GPU operate at 100% capacity. Traditional antivirus software running background file index scans will cause dropped frames...",
+    tags: ["Webroot", "Performance", "Cloud Antivirus", "3D Rendering"],
+    featured: true
+  },
+  {
+    id: "freelance-productivity-stack-2026",
+    title: "The Ultimate 2026 Software Stack for Freelance Designers & Teams",
+    category: "Productivity",
+    date: "Jun 30, 2026",
+    readTime: "6 min read",
+    author: "Chloe Bennett",
+    authorRole: "Design Operations Manager",
+    summary: "A curated breakdown of essential design, prototyping, feedback, and security tools every independent creative professional should possess.",
+    content: "Operating a successful design business requires balance between creative execution and business management. We review the essential software stack...",
+    tags: ["Productivity", "Freelance", "Software Stack", "Tools Review"],
+    featured: false
+  }
+];

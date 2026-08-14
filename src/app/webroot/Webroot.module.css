@@ -1,0 +1,109 @@
+.webrootHero {
+  background: linear-gradient(135deg, #064E3B 0%, #047857 50%, #0F172A 100%);
+  color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--webroot-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.metricCard {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  color: #ffffff;
+}
+
+.metricValue {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #A7F3D0;
+  margin-bottom: 0.25rem;
+}
+
+.metricLabel {
+  font-size: 0.8125rem;
+  color: #CBD5E1;
+}
+
+.productsSection {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Detail Page CSS */
+.detailHeader {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-light);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  margin-top: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 1024px) {
+  .detailGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebarCard {
+  background-color: #ffffff;
+  border: 1px solid var(--webroot-border);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 6rem;
+}
+
+.faqItem {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faqQuestion {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.faqAnswer {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

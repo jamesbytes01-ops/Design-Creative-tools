@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Sparkles, ShieldCheck, Github, Twitter, Linkedin, Globe } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
+import BrandLogo from './BrandLogo';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -9,14 +10,7 @@ export default function Footer() {
         <div className={styles.grid}>
           {/* Brand Column */}
           <div className={styles.brandCol}>
-            <Link href="/" className={styles.logo}>
-              <div className={styles.logoIcon}>
-                <Sparkles size={18} />
-              </div>
-              <div>
-                Design <span className="text-gradient-creative">& Creative</span> Tools
-              </div>
-            </Link>
+            <BrandLogo size="small" />
             <p className={styles.brandDesc}>
               Discover, evaluate, and integrate industry-standard software tools for graphic design, UI/UX, 3D, animation, and digital security.
             </p>

@@ -40,7 +40,7 @@
 
 .metricValue {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #A7F3D0;
   margin-bottom: 0.25rem;
 }
@@ -96,7 +96,7 @@
 }
 
 .faqQuestion {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.0625rem;
   color: var(--text-primary);
   margin-bottom: 0.5rem;

@@ -39,7 +39,7 @@
   border: 1px solid rgba(99, 102, 241, 0.18);
   color: var(--primary-700);
   font-size: 0.8125rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.01em;
   margin-bottom: 0.75rem;
   box-shadow: 0 2px 8px rgba(99, 102, 241, 0.06);
@@ -62,7 +62,7 @@
 
 .heroHeadline {
   font-size: 3.25rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.035em;
   color: var(--text-primary);
@@ -191,7 +191,7 @@
 
 .productName {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-primary);
   line-height: 1.3;
   margin-top: 0.5rem;
@@ -242,7 +242,7 @@
 
 .webrootBannerTitle {
   font-size: 1.125rem;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.25;
   margin-bottom: 0.25rem;
 }
@@ -260,7 +260,7 @@
   border-radius: var(--radius-full);
   padding: 0.4rem 0.85rem;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
   display: flex;
   align-items: center;

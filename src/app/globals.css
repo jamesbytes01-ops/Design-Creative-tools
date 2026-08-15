@@ -126,9 +126,13 @@ img, svg {
 }
 
 /* Typography Utility Classes */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
 .h1-title {
   font-size: clamp(2.25rem, 5vw, 3.75rem);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.025em;
   color: var(--text-primary);
@@ -136,7 +140,7 @@ img, svg {
 
 .h2-title {
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -144,7 +148,7 @@ img, svg {
 
 .h3-title {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.35;
   letter-spacing: -0.01em;
   color: var(--text-primary);

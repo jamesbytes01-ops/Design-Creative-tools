@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Search, Menu, X, Sparkles, ShieldCheck, ArrowRight } from 'lucide-react';
+import BrandLogo from './BrandLogo';
 import styles from './Navbar.module.css';
 
 export default function Navbar({ onOpenSearch }) {
@@ -21,7 +22,6 @@ export default function Navbar({ onOpenSearch }) {
     { label: 'Products', href: '/products' },
     { label: 'Webroot', href: '/webroot' },
     { label: 'Resources', href: '/resources' },
-    { label: 'About', href: '/about' },
   ];
 
   const isActive = (href) => {
@@ -33,14 +33,7 @@ export default function Navbar({ onOpenSearch }) {
     <header className={styles.header}>
       <div className={`container ${styles.navContainer}`}>
         {/* Brand Logo */}
-        <Link href="/" className={styles.logo}>
-          <div className={styles.logoIcon}>
-            <Sparkles size={20} />
-          </div>
-          <div className={styles.logoText}>
-            Design <span>& Creative</span> Tools
-          </div>
-        </Link>
+        <BrandLogo />
 
         {/* Desktop Navigation Links */}
         <nav>

@@ -1,6 +1,7 @@
 'use client';
 
-import { Star, ExternalLink, ArrowRight } from 'lucide-react';
+import { Star, ArrowRight } from 'lucide-react';
+import ToolVisualPreview from './ToolVisualPreview';
 import styles from './ToolCard.module.css';
 
 export default function ToolCard({ tool, onViewDetails }) {
@@ -20,6 +21,9 @@ export default function ToolCard({ tool, onViewDetails }) {
       style={{ cursor: 'pointer' }}
     >
       <div>
+        {/* Product Application UI Banner Preview */}
+        <ToolVisualPreview toolId={tool.id} toolName={tool.name} category={tool.category} />
+
         {/* Card Top Icon & Badges */}
         <div className={styles.cardTop}>
           <div className={styles.iconWrapper}>{tool.logo}</div>

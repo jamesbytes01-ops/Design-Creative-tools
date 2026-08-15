@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#4F46E5" />
+          <stop offset="100%" stop-color="#EC4899" />
+        </linearGradient>
+      </defs>
+      
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      <circle cx="150" cy="80" r="140" fill="#EC4899" opacity="0.3" filter="blur(40px)" />
+      <circle cx="650" cy="320" r="160" fill="#4F46E5" opacity="0.35" filter="blur(50px)" />
+      
+      <!-- 3D Vector Canvas Artboard -->
+      <g transform="translate(160, 60)">
+        <rect x="0" y="0" width="480" height="280" rx="20" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="2" style="backdrop-filter:blur(20px);" />
+        
+        <!-- Palette Swatches -->
+        <rect x="40" y="40" width="80" height="120" rx="12" fill="#4F46E5" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.3))" />
+        <rect x="140" y="40" width="80" height="120" rx="12" fill="#EC4899" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.3))" />
+        <rect x="240" y="40" width="80" height="120" rx="12" fill="#F59E0B" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.3))" />
+        <rect x="340" y="40" width="80" height="120" rx="12" fill="#10B981" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.3))" />
+        
+        <!-- Bezier Vector Path -->
+        <path d="M40 220 Q 240 120, 440 220" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.4))" />
+        <circle cx="240" cy="170" r="14" fill="#EC4899" stroke="#FFFFFF" stroke-width="4" />
+      </g>
+    
+    </svg>

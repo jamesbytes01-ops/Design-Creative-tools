@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#059669" />
+          <stop offset="100%" stop-color="#0D9488" />
+        </linearGradient>
+      </defs>
+      
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      
+      <!-- Isometric Viewport Grid -->
+      <g opacity="0.2">
+        <path d="M0 200 L800 200 M400 0 L400 400 M0 100 L800 100 M0 300 L800 300 M200 0 L200 400 M600 0 L600 400" stroke="#FFFFFF" stroke-width="2" />
+      </g>
+      
+      <!-- 3D Raytraced Render Cube -->
+      <g transform="translate(400, 190)">
+        <polygon points="0,-90 90,-40 0,10 -90,-40" fill="rgba(255,255,255,0.4)" stroke="#FFFFFF" stroke-width="3" />
+        <polygon points="-90,-40 0,10 0,110 -90,60" fill="rgba(255,255,255,0.25)" stroke="#FFFFFF" stroke-width="3" />
+        <polygon points="0,10 90,-40 90,60 0,110" fill="rgba(255,255,255,0.15)" stroke="#FFFFFF" stroke-width="3" />
+        <circle cx="0" cy="-40" r="16" fill="#34D399" filter="drop-shadow(0 0 15px #34D399)" />
+      </g>
+    
+    </svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#E11D48" />
+          <stop offset="100%" stop-color="#8B5CF6" />
+        </linearGradient>
+      </defs>
+      
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      <circle cx="600" cy="150" r="160" fill="#EC4899" opacity="0.35" filter="blur(50px)" />
+      
+      <!-- Video Timeline Workspace -->
+      <g transform="translate(150, 70)">
+        <rect x="0" y="0" width="500" height="260" rx="18" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+        
+        <!-- Track 1 -->
+        <rect x="30" y="30" width="440" height="50" rx="10" fill="rgba(0,0,0,0.2)" />
+        <rect x="50" y="36" width="220" height="38" rx="8" fill="#FB7185" />
+        
+        <!-- Track 2 -->
+        <rect x="30" y="95" width="440" height="50" rx="10" fill="rgba(0,0,0,0.2)" />
+        <rect x="160" y="101" width="260" height="38" rx="8" fill="#8B5CF6" />
+        
+        <!-- Track 3 -->
+        <rect x="30" y="160" width="440" height="50" rx="10" fill="rgba(0,0,0,0.2)" />
+        <rect x="90" y="166" width="180" height="38" rx="8" fill="#EC4899" />
+        
+        <!-- Playhead Line -->
+        <line x1="250" y1="10" x2="250" y2="230" stroke="#FFFFFF" stroke-width="4" filter="drop-shadow(0 0 10px #FFFFFF)" />
+        <polygon points="242,10 258,10 250,22" fill="#FFFFFF" />
+      </g>
+    
+    </svg>

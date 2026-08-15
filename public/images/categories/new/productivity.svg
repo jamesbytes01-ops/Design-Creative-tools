@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#2563EB" />
+          <stop offset="100%" stop-color="#10B981" />
+        </linearGradient>
+      </defs>
+      
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      <circle cx="300" cy="150" r="160" fill="#3B82F6" opacity="0.35" filter="blur(50px)" />
+      
+      <!-- 3D Kanban Task Board -->
+      <g transform="translate(180, 65)">
+        <rect x="0" y="0" width="130" height="270" rx="14" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.35)" stroke-width="2" />
+        <rect x="150" y="0" width="130" height="270" rx="14" fill="rgba(255,255,255,0.28)" stroke="rgba(255,255,255,0.5)" stroke-width="2" transform="translate(0, -10)" />
+        <rect x="300" y="0" width="130" height="270" rx="14" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.35)" stroke-width="2" />
+        
+        <!-- Cards inside -->
+        <rect x="162" y="10" width="106" height="60" rx="8" fill="#FFFFFF" />
+        <rect x="162" y="80" width="106" height="80" rx="8" fill="rgba(255,255,255,0.7)" />
+      </g>
+    
+    </svg>

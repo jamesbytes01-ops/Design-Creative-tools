@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#4338CA" />
+          <stop offset="100%" stop-color="#A855F7" />
+        </linearGradient>
+      </defs>
+      
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      <circle cx="400" cy="200" r="170" fill="#A855F7" opacity="0.45" filter="blur(65px)" />
+      
+      <!-- AI Neural Node Constellation -->
+      <g transform="translate(400, 200)">
+        <line x1="-180" y1="50" x2="-80" y2="-60" stroke="#C084FC" stroke-width="3" stroke-dasharray="6 6" />
+        <line x1="-80" y1="-60" x2="60" y2="70" stroke="#C084FC" stroke-width="3" stroke-dasharray="6 6" />
+        <line x1="60" y1="70" x2="170" y2="-40" stroke="#C084FC" stroke-width="3" stroke-dasharray="6 6" />
+        
+        <circle cx="-180" cy="50" r="18" fill="#FFFFFF" filter="drop-shadow(0 0 15px #FFFFFF)" />
+        <circle cx="-80" cy="-60" r="24" fill="#C084FC" stroke="#FFFFFF" stroke-width="4" filter="drop-shadow(0 0 20px #C084FC)" />
+        <circle cx="60" cy="70" r="20" fill="#6366F1" stroke="#FFFFFF" stroke-width="4" filter="drop-shadow(0 0 20px #6366F1)" />
+        <circle cx="170" cy="-40" r="26" fill="#FFFFFF" filter="drop-shadow(0 0 25px #FFFFFF)" />
+      </g>
+    
+    </svg>

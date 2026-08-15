@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#D97706" />
+          <stop offset="100%" stop-color="#EF4444" />
+        </linearGradient>
+      </defs>
+      
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      <circle cx="250" cy="300" r="160" fill="#F59E0B" opacity="0.4" filter="blur(60px)" />
+      
+      <!-- Liquid Paint Ribbon & Stylus -->
+      <g transform="translate(150, 60)">
+        <path d="M20 220 C 120 40, 280 240, 460 60" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" fill="none" filter="drop-shadow(0 10px 25px rgba(0,0,0,0.3))" />
+        <path d="M20 220 C 120 40, 280 240, 460 60" stroke="#FBBF24" stroke-width="12" stroke-linecap="round" fill="none" />
+        <circle cx="460" cy="60" r="20" fill="#FFFFFF" filter="drop-shadow(0 4px 14px rgba(0,0,0,0.4))" />
+      </g>
+    
+    </svg>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Palette, Layout, Image, Video, PenTool, Box, Sparkles, CheckCircle2, Shield, ArrowRight } from 'lucide-react';
+import CategoryVisualPreview from './CategoryVisualPreview';
 import { toolsData } from '@/data/toolsData';
 import { webrootProducts } from '@/data/webrootData';
 import styles from './CategoryCard.module.css';
@@ -33,17 +34,22 @@ export default function CategoryCard({ category }) {
       className={`${styles.card} ${isCybersecurity ? 'card-webroot' : ''}`}
     >
       <div>
-        <div
-          className={styles.iconWrapper}
-          style={{
-            backgroundColor: `${category.colorAccent}15`,
-            color: category.colorAccent
-          }}
-        >
-          <IconComponent size={24} />
+        {/* Approach A: Top Visual Preview Banner */}
+        <CategoryVisualPreview categoryId={category.id} colorAccent={category.colorAccent} />
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '0.625rem' }}>
+          <div
+            className={styles.iconWrapper}
+            style={{
+              backgroundColor: `${category.colorAccent}15`,
+              color: category.colorAccent
+            }}
+          >
+            <IconComponent size={18} />
+          </div>
+          <h3 className={styles.title} style={{ marginBottom: 0 }}>{category.name}</h3>
         </div>
 
-        <h3 className={styles.title}>{category.name}</h3>
         <p className={styles.desc}>{category.description}</p>
       </div>
 

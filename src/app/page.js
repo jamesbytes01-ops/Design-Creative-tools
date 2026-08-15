@@ -71,12 +71,12 @@ export default function HomePage() {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '1.75rem',
-                  marginTop: '2.5rem',
+                  gap: '2.25rem',
+                  marginTop: '3.25rem',
                   fontSize: '0.875rem',
                   color: 'var(--text-muted)',
                   borderTop: '1px solid var(--border-light)',
-                  paddingTop: '1.25rem',
+                  paddingTop: '1.5rem',
                   width: '100%'
                 }}
               >

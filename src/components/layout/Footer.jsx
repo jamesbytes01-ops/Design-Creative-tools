@@ -12,10 +12,10 @@ export default function Footer() {
           <div className={styles.brandCol}>
             <BrandLogo size="small" />
             <p className={styles.brandDesc}>
-              Discover, evaluate, and integrate industry-standard software tools for graphic design, UI/UX, 3D, animation, and digital security.
+              The premier Design & Creative Tools discovery platform with integrated workflow security. Discover, evaluate, and protect your digital creative workspace.
             </p>
             <div className={styles.webrootBadge}>
-              <ShieldCheck size={16} /> Integrated with Webroot Security Suite
+              <ShieldCheck size={16} /> Integrated Creative Workflow Protection
             </div>
           </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
         {/* Bottom Legal & Copyright Bar */}
         <div className={styles.bottomBar}>
           <div>
-            © {new Date().getFullYear()} Design & Creative Tools Platform. All rights reserved. Webroot logos and product names are trademarks of OpenText / Webroot Inc.
+            © {new Date().getFullYear()} Design & Creative Tools Platform with Integrated Security. All rights reserved. Webroot logos and product names are trademarks of OpenText / Webroot Inc.
           </div>
           <div className={styles.legalLinks}>
             <Link href="/about">Privacy Policy</Link>

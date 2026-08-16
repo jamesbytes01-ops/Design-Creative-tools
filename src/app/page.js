@@ -45,24 +45,24 @@ export default function HomePage() {
             <div className={styles.heroLeft}>
               <div className={styles.heroBadge}>
                 <span className={styles.pulseDot} />
-                <span>Premium Creative & Webroot Security Platform</span>
+                <span>Design & Creative Tools Platform with Integrated Security</span>
               </div>
 
               <h1 className={styles.heroHeadline}>
-                Build & Protect Your <span className="text-gradient-creative">Creative Digital Ecosystem</span>
+                Discover Design Tools & Safeguard Your <span className="text-gradient-creative">Creative Digital Workflow</span>
               </h1>
 
               <p className={styles.heroSubtext}>
-                Explore purpose-built design, 3D rendering, AI creation software, and enterprise-grade Webroot protection — curated for high-performing creators.
+                Explore purpose-built 2D/3D design software, AI creation tools, and integrated Webroot security engineered to protect your high-value creative assets and client deliverables.
               </p>
 
               {/* Hero Action Buttons */}
               <div className={styles.heroCTAGroup}>
                 <Link href="/explore" className="btn btn-primary btn-lg">
-                  Explore Software Suite <ArrowRight size={18} />
+                  Explore Creative Suite <ArrowRight size={18} />
                 </Link>
                 <Link href="/webroot" className="btn btn-secondary btn-lg" style={{ borderColor: 'var(--webroot-border)', backgroundColor: '#FFFFFF' }}>
-                  <ShieldCheck size={18} color="var(--webroot-primary)" /> Webroot Products
+                  <ShieldCheck size={18} color="var(--webroot-primary)" /> Workflow Security
                 </Link>
               </div>
 
@@ -81,13 +81,15 @@ export default function HomePage() {
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontWeight: 600 }}>
-                  <CheckCircle2 size={16} color="var(--primary-600)" /> 100+ Verified Software Tools
+                  <CheckCircle2 size={16} color="var(--primary-600)" /> 100+ Curated Creative Tools
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontWeight: 600 }}>
-                  <CheckCircle2 size={16} color="var(--webroot-primary)" /> Cloud Threat Shield 100%
+                  <CheckCircle2 size={16} color="var(--webroot-primary)" /> Endpoint Threat Shield 100%
                 </div>
               </div>
-            </div>            {/* Hero Right Composition - Commercial Enterprise Software & Security Showcase */}
+            </div>
+
+            {/* Hero Right Composition - Commercial Enterprise Software & Security Showcase */}
             <div className={styles.heroVisualWrapper}>
               <div className={styles.heroGlowBackdrop} />
 
@@ -191,7 +193,7 @@ export default function HomePage() {
                 <Link href="/webroot/antivirus" className={styles.webrootShowcaseBanner}>
                   <div>
                     <div className={styles.webrootBannerTitle}>
-                      Webroot® SecureAnywhere Threat Shield
+                      Integrated Webroot® Workflow Threat Shield
                     </div>
                     <div className={styles.webrootBannerSub}>
                       Real-time cloud endpoint defense with zero CPU rendering overhead.
@@ -199,7 +201,7 @@ export default function HomePage() {
                   </div>
 
                   <div className={styles.webrootShieldBadge}>
-                    <ShieldCheck size={18} /> Active Defense
+                    <ShieldCheck size={18} /> Active Protection
                   </div>
                 </Link>
               </div>
@@ -262,38 +264,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. IMPORTANT WEBROOT INTEGRATION SECTION */}
+      {/* 4. INTEGRATED WORKFLOW SECURITY SECTION */}
       <section className="container" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
         <div className={styles.webrootSection}>
           <div className={styles.webrootGrid}>
             {/* Left: Copy & Branding */}
             <div className={styles.webrootText}>
               <div className="badge badge-webroot" style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)', color: '#ffffff', borderColor: 'rgba(255, 255, 255, 0.3)', marginBottom: '1rem' }}>
-                <ShieldCheck size={16} /> Dedicated Security Integration
+                <ShieldCheck size={16} /> Integrated Creative Workflow Security
               </div>
 
               <h2 style={{ fontSize: '2.25rem', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem' }}>
-                Protection That Works in the Background
+                Protecting Creative Workstations & Intellectual Property
               </h2>
 
               <p style={{ fontSize: '1.0625rem', color: '#E2E8F0', lineHeight: 1.6, marginBottom: '1.75rem' }}>
-                Webroot provides cloud-driven cybersecurity built to shield digital creators, design studios, and intellectual property without slowing down intensive rendering or heavy software suites.
+                As creators download third-party brushes, plugins, 3D models, and font packages, endpoint threat protection becomes essential. Webroot provides lightweight cloud cybersecurity designed to protect design assets and client deliverables without slowing down heavy creative suites.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9375rem', color: '#F1F5F9' }}>
-                  <CheckCircle2 size={18} color="#A7F3D0" /> Lightweight agent installs in seconds with zero CPU drag
+                  <CheckCircle2 size={18} color="#A7F3D0" /> Zero CPU drag during 3D rendering, video export, or heavy canvas work
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9375rem', color: '#F1F5F9' }}>
-                  <CheckCircle2 size={18} color="#A7F3D0" /> Real-time cloud threat intelligence against ransomware & phishing
+                  <CheckCircle2 size={18} color="#A7F3D0" /> Real-time threat defense when downloading third-party plugins & assets
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9375rem', color: '#F1F5F9' }}>
-                  <CheckCircle2 size={18} color="#A7F3D0" /> Multi-device protection across PC, Mac, tablets, and smartphones
+                  <CheckCircle2 size={18} color="#A7F3D0" /> Endpoint ransomware shield protecting high-value client project files
                 </div>
               </div>
 
               <Link href="/webroot" className="btn btn-webroot btn-lg">
-                Explore Webroot Products <ArrowRight size={18} />
+                Explore Webroot Protection <ArrowRight size={18} />
               </Link>
             </div>
 

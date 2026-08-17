@@ -40,26 +40,7 @@ export default function CategoryVisualPreview({ categoryId }) {
           }}
         />
 
-        {/* Glassmorphic Pill Badge Tag */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '8px',
-            right: '8px',
-            backgroundColor: 'rgba(15, 23, 42, 0.65)',
-            backdropFilter: 'blur(8px)',
-            WebkitBackdropFilter: 'blur(8px)',
-            border: '1px solid rgba(255, 255, 255, 0.25)',
-            borderRadius: '9999px',
-            padding: '2px 8px',
-            fontSize: '9px',
-            fontWeight: 800,
-            color: '#FFFFFF',
-            letterSpacing: '0.05em',
-          }}
-        >
-          CURATED DISCIPLINE
-        </div>
+
       </div>
     </div>
   );

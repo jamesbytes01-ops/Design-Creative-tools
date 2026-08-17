@@ -54,7 +54,7 @@ export default function CategoryCard({ category }) {
       </div>
 
       <div className={styles.footer}>
-        <span>{actualCount} {isCybersecurity ? 'Webroot Security Suites' : 'Curated Tools'}</span>
+        <span>{actualCount} {isCybersecurity ? 'Webroot Security Suites' : 'Tools'}</span>
         <ArrowRight size={16} />
       </div>
     </Link>

@@ -219,7 +219,7 @@ export default function HomePage() {
             </div>
             <h2 className="h2-title">Explore Tools by Category</h2>
             <p className="sub-text" style={{ fontSize: '1rem', marginTop: '0.35rem' }}>
-              Find purpose-built software engineered for your precise creative discipline.
+              Find software and apps built for your specific design workflow.
             </p>
           </div>
           <Link href="/categories" className="btn btn-secondary">

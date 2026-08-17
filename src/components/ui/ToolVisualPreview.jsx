@@ -138,26 +138,7 @@ export default function ToolVisualPreview({ toolId, toolName, category }) {
             }}
           />
 
-          {/* Software Badge Overlay */}
-          <div
-            style={{
-              position: 'absolute',
-              top: '8px',
-              right: '8px',
-              backgroundColor: 'rgba(15, 23, 42, 0.65)',
-              backdropFilter: 'blur(8px)',
-              WebkitBackdropFilter: 'blur(8px)',
-              border: '1px solid rgba(255, 255, 255, 0.25)',
-              borderRadius: '9999px',
-              padding: '2px 8px',
-              fontSize: '9px',
-              fontWeight: 800,
-              color: '#FFFFFF',
-              letterSpacing: '0.05em',
-            }}
-          >
-            OFFICIAL SUITE
-          </div>
+
         </div>
       ) : (
         /* Bespoke 3D Glassmorphic Software Showcase Banner for Secondary Tools */
@@ -181,22 +162,7 @@ export default function ToolVisualPreview({ toolId, toolName, category }) {
             <span style={{ fontSize: '12px', fontWeight: 800, letterSpacing: '0.06em', color: '#FFFFFF', textShadow: '0 2px 6px rgba(0,0,0,0.3)' }}>
               {(toolName || 'SOFTWARE').toUpperCase()}
             </span>
-            <span
-              style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.18)',
-                backdropFilter: 'blur(8px)',
-                WebkitBackdropFilter: 'blur(8px)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
-                borderRadius: '9999px',
-                padding: '2px 8px',
-                fontSize: '9px',
-                fontWeight: 800,
-                color: '#FFFFFF',
-                letterSpacing: '0.05em',
-              }}
-            >
-              PRO SUITE
-            </span>
+
           </div>
 
           {/* Bottom Row: 3D Glassmorphic Emblem & Descriptor */}

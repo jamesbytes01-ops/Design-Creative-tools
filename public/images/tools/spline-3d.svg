@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#064E3B" />
+          <stop offset="100%" stop-color="#0F172A" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      
+      <!-- 3D Web Canvas & Interactive Sphere -->
+      <g transform="translate(400, 200)">
+        <circle cx="0" cy="0" r="150" fill="rgba(16, 185, 129, 0.25)" filter="blur(45px)" />
+        
+        <!-- Wireframe Mesh Sphere -->
+        <circle cx="0" cy="0" r="100" fill="rgba(255, 255, 255, 0.15)" stroke="#34D399" stroke-width="3" />
+        <ellipse cx="0" cy="0" rx="100" ry="40" fill="none" stroke="rgba(255, 255, 255, 0.6)" stroke-width="2" />
+        <ellipse cx="0" cy="0" rx="40" ry="100" fill="none" stroke="rgba(255, 255, 255, 0.6)" stroke-width="2" />
+        <circle cx="0" cy="0" r="16" fill="#FFFFFF" filter="drop-shadow(0 0 20px #34D399)" />
+      </g>
+    
+    </svg>

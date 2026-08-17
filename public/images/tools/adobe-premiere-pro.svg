@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#4C0519" />
+          <stop offset="100%" stop-color="#18181B" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      
+      <!-- Multi-Track Timeline & Playhead -->
+      <g transform="translate(400, 200)">
+        <rect x="-240" y="-110" width="480" height="220" rx="16" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2" />
+        
+        <!-- Track Clips -->
+        <rect x="-210" y="-80" width="180" height="42" rx="8" fill="#E11D48" />
+        <rect x="-15" y="-80" width="220" height="42" rx="8" fill="#FB7185" opacity="0.85" />
+        <rect x="-210" y="-25" width="280" height="42" rx="8" fill="#9F1239" />
+        <rect x="80" y="-25" width="120" height="42" rx="8" fill="#E11D48" />
+        <rect x="-210" y="30" width="380" height="42" rx="8" fill="#BE123C" opacity="0.9" />
+        
+        <!-- Red Playhead Line -->
+        <line x1="20" y1="-100" x2="20" y2="90" stroke="#FFFFFF" stroke-width="4" filter="drop-shadow(0 0 12px #E11D48)" />
+        <polygon points="12,-100 28,-100 20,-88" fill="#FFFFFF" />
+      </g>
+    
+    </svg>

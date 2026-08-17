@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#C2410C" />
+          <stop offset="100%" stop-color="#7C2D12" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      
+      <!-- Vector Pen Path & Node Handles -->
+      <g transform="translate(400, 200)">
+        <circle cx="0" cy="0" r="140" fill="rgba(245, 158, 11, 0.2)" filter="blur(40px)" />
+        <path d="M-220 80 Q 0 -140, 220 80" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none" filter="drop-shadow(0 6px 16px rgba(0,0,0,0.4))" />
+        <path d="M-220 80 Q 0 -140, 220 80" stroke="#F59E0B" stroke-width="4" stroke-linecap="round" fill="none" />
+        
+        <!-- Precision Node Control Handles -->
+        <line x1="-100" y1="-80" x2="100" y2="20" stroke="#FBBF24" stroke-width="3" stroke-dasharray="6 6" />
+        <rect x="-106" y="-86" width="12" height="12" fill="#FFFFFF" stroke="#C2410C" stroke-width="2" />
+        <circle cx="100" cy="20" r="8" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2" />
+        <circle cx="0" cy="-30" r="12" fill="#FFFFFF" stroke="#F59E0B" stroke-width="4" />
+      </g>
+    
+    </svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#3730A3" />
+          <stop offset="100%" stop-color="#0F172A" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      
+      <!-- Open Source CSS Grid Layout -->
+      <g transform="translate(400, 200)">
+        <rect x="-220" y="-110" width="440" height="220" rx="16" fill="rgba(255, 255, 255, 0.12)" stroke="rgba(255, 255, 255, 0.35)" stroke-width="2" />
+        
+        <!-- CSS Grid Columns -->
+        <rect x="-190" y="-80" width="120" height="160" rx="10" fill="rgba(255, 255, 255, 0.2)" stroke="#818CF8" stroke-width="2" />
+        <rect x="-50" y="-80" width="240" height="70" rx="10" fill="#6366F1" opacity="0.9" />
+        <rect x="-50" y="5" width="110" height="75" rx="10" fill="rgba(255, 255, 255, 0.25)" />
+        <rect x="80" y="5" width="110" height="75" rx="10" fill="#818CF8" />
+      </g>
+    
+    </svg>

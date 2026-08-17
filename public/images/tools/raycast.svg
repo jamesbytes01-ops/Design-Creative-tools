@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#991B1B" />
+          <stop offset="100%" stop-color="#0F172A" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      
+      <!-- Command Bar Launcher & Search Glow -->
+      <g transform="translate(400, 200)">
+        <circle cx="0" cy="0" r="140" fill="rgba(239, 68, 68, 0.25)" filter="blur(45px)" />
+        
+        <!-- Command Bar Container -->
+        <rect x="-230" y="-55" width="460" height="110" rx="18" fill="rgba(15, 23, 42, 0.85)" stroke="#F87171" stroke-width="2" filter="drop-shadow(0 16px 36px rgba(0,0,0,0.6))" />
+        
+        <!-- Command Icon & Prompt -->
+        <circle cx="-180" cy="0" r="20" fill="#EF4444" />
+        <rect x="-140" y="-10" width="180" height="20" rx="6" fill="#FFFFFF" />
+        <rect x="110" y="-18" width="80" height="36" rx="8" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+      </g>
+    
+    </svg>

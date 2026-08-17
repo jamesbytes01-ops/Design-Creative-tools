@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#0F172A" />
+          <stop offset="100%" stop-color="#1E293B" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="400" fill="url(#bgGrad)" />
+      
+      <!-- Connected Block Workspace & Database -->
+      <g transform="translate(400, 200)">
+        <rect x="-220" y="-110" width="440" height="220" rx="16" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2" />
+        
+        <!-- Document Blocks -->
+        <rect x="-180" y="-70" width="200" height="14" rx="4" fill="#FFFFFF" />
+        <rect x="-180" y="-45" width="360" height="10" rx="3" fill="rgba(255,255,255,0.6)" />
+        <rect x="-180" y="-25" width="300" height="10" rx="3" fill="rgba(255,255,255,0.6)" />
+        
+        <!-- Database Card Grid -->
+        <rect x="-180" y="5" width="110" height="65" rx="8" fill="#3B82F6" opacity="0.9" />
+        <rect x="-55" y="5" width="110" height="65" rx="8" fill="rgba(255,255,255,0.2)" />
+        <rect x="70" y="5" width="110" height="65" rx="8" fill="rgba(255,255,255,0.2)" />
+      </g>
+    
+    </svg>

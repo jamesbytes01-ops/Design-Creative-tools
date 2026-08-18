@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ShieldCheck, UserCheck, Users, Cpu, Laptop, ArrowRight, Check } from 'lucide-react';
+import { ShieldCheck, UserCheck, Users, Cpu, Laptop, Smartphone, Globe, ArrowRight, Check } from 'lucide-react';
 import { webrootProducts } from '@/data/webrootData';
 
 export default function WebrootSecurityAdvisor() {
@@ -14,7 +14,7 @@ export default function WebrootSecurityAdvisor() {
       title: 'Solo Designer / Freelancer',
       icon: UserCheck,
       desc: 'Individual creatives managing confidential client assets on laptop and mobile.',
-      recommendedSlug: 'internet-security'
+      recommendedSlug: 'internet-security-plus'
     },
     {
       id: 'agency',
@@ -36,6 +36,13 @@ export default function WebrootSecurityAdvisor() {
       icon: Laptop,
       desc: 'Designers working from coffee shops, airports, and public Wi-Fi.',
       recommendedSlug: 'wifi-security'
+    },
+    {
+      id: 'enterprise',
+      title: 'Enterprise & IT Network Admin',
+      icon: Globe,
+      desc: 'Organizations needing DNS domain protection and security awareness training.',
+      recommendedSlug: 'dns-protection'
     }
   ];
 
@@ -58,10 +65,10 @@ export default function WebrootSecurityAdvisor() {
           <ShieldCheck size={14} /> Interactive Security Advisor
         </span>
         <h3 className="h2-title" style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>
-          Find the Right Webroot Protection for Your Creative Workflow
+          Find the Right Webroot Protection for Your Workflow
         </h3>
         <p className="sub-text" style={{ fontSize: '0.9375rem' }}>
-          Select your work profile to see custom security recommendation.
+          Select your profile to receive a tailored Webroot security recommendation.
         </p>
       </div>
 
@@ -69,8 +76,8 @@ export default function WebrootSecurityAdvisor() {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '1rem',
+          gridTemplateColumns: 'repeat(5, 1fr)',
+          gap: '0.75rem',
           marginBottom: '2rem'
         }}
       >
@@ -82,7 +89,7 @@ export default function WebrootSecurityAdvisor() {
               key={p.id}
               onClick={() => setActivePersona(p.id)}
               style={{
-                padding: '1.25rem 1rem',
+                padding: '1.1rem 0.75rem',
                 borderRadius: 'var(--radius-lg)',
                 border: isSelected ? '2px solid var(--webroot-primary)' : '1px solid var(--border-light)',
                 backgroundColor: isSelected ? 'var(--webroot-light)' : '#FFFFFF',
@@ -92,11 +99,12 @@ export default function WebrootSecurityAdvisor() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: '0.5rem'
+                gap: '0.4rem',
+                cursor: 'pointer'
               }}
             >
-              <Icon size={24} />
-              <div style={{ fontWeight: 700, fontSize: '0.9375rem', color: isSelected ? 'var(--webroot-primary)' : 'var(--text-primary)' }}>
+              <Icon size={22} />
+              <div style={{ fontWeight: 700, fontSize: '0.85rem', color: isSelected ? 'var(--webroot-primary)' : 'var(--text-primary)' }}>
                 {p.title}
               </div>
             </button>

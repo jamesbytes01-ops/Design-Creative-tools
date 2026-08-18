@@ -1,11 +1,17 @@
 import Link from 'next/link';
-import { ShieldCheck, Shield, Cpu, Lock, CheckCircle2, ArrowRight, Zap, RefreshCw } from 'lucide-react';
+import { ShieldCheck, Shield, Cpu, Lock, CheckCircle2, ArrowRight, Zap, RefreshCw, Layers, BookOpen, Download, UserCheck } from 'lucide-react';
 import WebrootProductCard from '@/components/ui/WebrootProductCard';
 import WebrootSecurityAdvisor from '@/components/ui/WebrootSecurityAdvisor';
+import WebrootArchitectureSection from '@/components/ui/WebrootArchitectureSection';
+import WebrootSetupGuide from '@/components/ui/WebrootSetupGuide';
 import { webrootSuiteInfo, webrootProducts } from '@/data/webrootData';
 import styles from './Webroot.module.css';
 
 export default function WebrootPage() {
+  const consumerProducts = webrootProducts.filter((p) => p.category === 'Consumer Security');
+  const mobilePrivacyProducts = webrootProducts.filter((p) => p.category === 'Mobile & Privacy');
+  const businessProducts = webrootProducts.filter((p) => p.category === 'Business Security');
+
   return (
     <div>
       {/* 1. WEBROOT HERO SECTION */}
@@ -22,24 +28,27 @@ export default function WebrootPage() {
                   marginBottom: '1.25rem'
                 }}
               >
-                <ShieldCheck size={16} /> Integrated Security Ecosystem
+                <ShieldCheck size={16} /> Integrated Cybersecurity Portfolio
               </div>
 
               <h1 className="h1-title" style={{ color: '#ffffff', fontSize: '3rem', marginBottom: '1rem' }}>
                 {webrootSuiteInfo.headline}
               </h1>
 
-              <p style={{ fontSize: '1.125rem', color: '#E2E8F0', lineHeight: 1.6, maxWidth: '600px', marginBottom: '2rem' }}>
+              <p style={{ fontSize: '1.125rem', color: '#E2E8F0', lineHeight: 1.6, maxWidth: '640px', marginBottom: '2rem' }}>
                 {webrootSuiteInfo.description}
               </p>
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="#products" className="btn btn-webroot btn-lg">
-                  Explore Webroot Suite <ArrowRight size={18} />
+                  Explore Products ({webrootProducts.length}) <ArrowRight size={18} />
                 </a>
-                <Link href="/contact" className="btn btn-secondary btn-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
-                  Enterprise Sales
-                </Link>
+                <a href="#architecture" className="btn btn-secondary btn-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
+                  How It Works
+                </a>
+                <a href="#setup-guide" className="btn btn-secondary btn-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
+                  Setup & Sign In Guide
+                </a>
               </div>
             </div>
 
@@ -64,7 +73,7 @@ export default function WebrootPage() {
           </div>
           <h2 className="h2-title">Engineered Specifically for High-Performance Creators</h2>
           <p className="sub-text" style={{ fontSize: '1rem', marginTop: '0.35rem' }}>
-            Unlike bloated antivirus tools that consume render threads, Webroot offloads heavy threat processing to the cloud.
+            Unlike bloated antivirus software that consumes render threads, Webroot offloads heavy threat processing to the cloud.
           </p>
         </div>
 
@@ -107,29 +116,69 @@ export default function WebrootPage() {
         </div>
       </section>
 
-      {/* 3. WEBROOT PRODUCTS GRID */}
+      {/* 3. TECHNICAL MECHANICS ("HOW IT WORKS") SECTION */}
+      <section id="architecture" className="container" style={{ paddingTop: '2rem', paddingBottom: '5rem' }}>
+        <WebrootArchitectureSection />
+      </section>
+
+      {/* 4. WEBROOT PRODUCTS GRID (CATEGORIZED) */}
       <section id="products" className={styles.productsSection} style={{ backgroundColor: 'var(--bg-secondary)', borderTop: '1px solid var(--border-light)', borderBottom: '1px solid var(--border-light)' }}>
         <div className="container">
           <div style={{ marginBottom: '3rem' }}>
             <div className="badge badge-webroot" style={{ marginBottom: '0.5rem' }}>
-              Product Portfolio
+              Complete Portfolio ({webrootProducts.length} Products)
             </div>
-            <h2 className="h2-title">Webroot Security Product Suite</h2>
+            <h2 className="h2-title">Webroot Security Product Ecosystem</h2>
             <p className="sub-text" style={{ fontSize: '1rem', marginTop: '0.35rem' }}>
-              Select from individual antivirus protection to enterprise multi-endpoint security solutions.
+              Select from individual antivirus defense to multi-device complete protection, mobile security, and enterprise solutions.
             </p>
           </div>
 
-          <div className="grid-3">
-            {webrootProducts.map((product) => (
-              <WebrootProductCard key={product.id} product={product} />
-            ))}
+          {/* Consumer Security */}
+          <div style={{ marginBottom: '3.5rem' }}>
+            <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <Shield size={20} color="var(--webroot-primary)" /> Consumer & Individual Security
+            </div>
+            <div className="grid-3">
+              {consumerProducts.map((product) => (
+                <WebrootProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile & Privacy */}
+          <div style={{ marginBottom: '3.5rem' }}>
+            <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <Lock size={20} color="var(--webroot-primary)" /> Mobile Protection & Privacy VPN
+            </div>
+            <div className="grid-2">
+              {mobilePrivacyProducts.map((product) => (
+                <WebrootProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
+
+          {/* Business & Enterprise Security */}
+          <div>
+            <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <Layers size={20} color="var(--webroot-primary)" /> Business, MSP & Enterprise Intelligence
+            </div>
+            <div className="grid-2">
+              {businessProducts.map((product) => (
+                <WebrootProductCard key={product.id} product={product} />
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 4. INTERACTIVE SECURITY ADVISOR */}
-      <section className="container" style={{ paddingTop: '5rem', paddingBottom: '5rem' }}>
+      {/* 5. INTERACTIVE SETUP, ACCOUNT & USER GUIDES */}
+      <section id="setup-guide" className="container" style={{ paddingTop: '5rem', paddingBottom: '5rem' }}>
+        <WebrootSetupGuide />
+      </section>
+
+      {/* 6. INTERACTIVE SECURITY ADVISOR */}
+      <section className="container" style={{ paddingBottom: '5rem' }}>
         <WebrootSecurityAdvisor />
       </section>
     </div>

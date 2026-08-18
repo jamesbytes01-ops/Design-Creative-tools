@@ -1,12 +1,17 @@
 import Link from 'next/link';
-import { ShieldCheck, ShieldAlert, Wifi, Building, Lock, Check, ArrowRight } from 'lucide-react';
+import { ShieldCheck, ShieldAlert, Shield, Smartphone, Wifi, Building, Globe, GraduationCap, Cloud, Lock, Check, ArrowRight } from 'lucide-react';
 import styles from './WebrootProductCard.module.css';
 
 const iconMap = {
   ShieldCheck,
   ShieldAlert,
+  Shield,
+  Smartphone,
   Wifi,
   Building,
+  Globe,
+  GraduationCap,
+  Cloud,
   Lock
 };
 
@@ -17,7 +22,7 @@ export default function WebrootProductCard({ product }) {
     <Link
       href={`/webroot/${product.slug}`}
       className={styles.card}
-      style={{ textDecoration: 'none', color: 'inherit', display: 'flex' }}
+      style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
     >
       <div>
         {/* Top Icon & Badge */}
@@ -44,7 +49,7 @@ export default function WebrootProductCard({ product }) {
         </ul>
       </div>
 
-      <div>
+      <div style={{ marginTop: '1.5rem' }}>
         {/* Bottom Platform Badges & Action */}
         <div className={styles.bottomMeta}>
           <div className={styles.platforms}>

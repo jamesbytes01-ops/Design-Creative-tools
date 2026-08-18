@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ShieldCheck, Check, ArrowRight, ChevronRight, HelpCircle, Laptop, Info, Cpu, Download, LogIn, UserCheck, RefreshCw, Key, ShieldAlert, Shield, Smartphone, Wifi, Building, Globe, GraduationCap, Cloud, Lock } from 'lucide-react';
 import { webrootProducts } from '@/data/webrootData';
+import WebrootVisualPreview from '@/components/ui/WebrootVisualPreview';
+import WebrootProductCard from '@/components/ui/WebrootProductCard';
 import styles from '../Webroot.module.css';
 
 const iconMap = {
@@ -37,7 +39,7 @@ export default async function WebrootProductDetailPage({ params }) {
   return (
     <div>
       {/* Detail Page Header & Breadcrumb */}
-      <section className={styles.detailHeader}>
+      <section className={styles.detailHeader} style={{ position: 'relative', paddingBottom: '3.5rem' }}>
         <div className="container">
           {/* Breadcrumb Navigation */}
           <nav style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
@@ -47,6 +49,11 @@ export default async function WebrootProductDetailPage({ params }) {
             <ChevronRight size={14} />
             <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{product.name}</span>
           </nav>
+
+          {/* Visual Showcase Header Banner */}
+          <div style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', marginBottom: '2rem', boxShadow: 'var(--shadow-md)' }}>
+            <WebrootVisualPreview productId={product.id} category={product.category} name={product.name} />
+          </div>
 
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1.5rem', flexWrap: 'wrap' }}>
             <div
@@ -59,7 +66,8 @@ export default async function WebrootProductDetailPage({ params }) {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: 'var(--webroot-primary)'
+                color: 'var(--webroot-primary)',
+                flexShrink: 0
               }}
             >
               <IconComponent size={36} />
@@ -326,16 +334,7 @@ export default async function WebrootProductDetailPage({ params }) {
             </h3>
             <div className="grid-3">
               {relatedProducts.map((rel) => (
-                <div key={rel.id} className="card-base card-webroot" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                  <div>
-                    <span className="badge badge-webroot" style={{ marginBottom: '0.5rem' }}>{rel.category}</span>
-                    <h4 style={{ fontWeight: 700, fontSize: '1.125rem', marginBottom: '0.25rem' }}>{rel.name}</h4>
-                    <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>{rel.subtitle}</p>
-                  </div>
-                  <Link href={`/webroot/${rel.slug}`} className="btn btn-webroot btn-sm" style={{ alignSelf: 'flex-start' }}>
-                    View Product <ArrowRight size={14} />
-                  </Link>
-                </div>
+                <WebrootProductCard key={rel.id} product={rel} />
               ))}
             </div>
           </div>

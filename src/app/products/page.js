@@ -2,11 +2,12 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, ShieldCheck, Sparkles, Check, ArrowRight, Star } from 'lucide-react';
+import { Search, ShieldCheck, Sparkles, Check, ArrowRight, Star, Layers, Palette } from 'lucide-react';
 import { toolsData } from '@/data/toolsData';
 import { webrootProducts } from '@/data/webrootData';
 import ToolDetailModal from '@/components/ui/ToolDetailModal';
 import WebrootProductCard from '@/components/ui/WebrootProductCard';
+import ToolCard from '@/components/ui/ToolCard';
 
 export default function ProductsPage() {
   const [activeTab, setActiveTab] = useState('all');
@@ -62,6 +63,9 @@ export default function ProductsPage() {
     return matchesSearch;
   });
 
+  const webrootItems = filteredProducts.filter((p) => p.type === 'webroot');
+  const creativeItems = filteredProducts.filter((p) => p.type === 'creative');
+
   return (
     <div>
       {/* Header */}
@@ -72,7 +76,7 @@ export default function ProductsPage() {
           </div>
           <h1 className="h1-title" style={{ fontSize: '2.5rem' }}>Software Products Marketplace</h1>
           <p className="sub-text" style={{ fontSize: '1rem', marginTop: '0.5rem', maxWidth: '640px' }}>
-            Explore premium digital tools and Webroot cybersecurity suites available for individuals, teams, and enterprises.
+            Explore premium digital tools with rich visual previews and Webroot cybersecurity suites available for individuals, teams, and enterprises.
           </p>
 
           {/* Search & Tabs */}
@@ -121,52 +125,61 @@ export default function ProductsPage() {
 
       {/* Catalog Grid */}
       <section className="container" style={{ paddingTop: '3.5rem', paddingBottom: '5rem' }}>
-        <div className="grid-3">
-          {filteredProducts.map((p) => {
-            if (p.type === 'webroot') {
-              return <WebrootProductCard key={p.id} product={p.originalWebroot} />;
-            }
-            return (
-              <div key={p.id} className="card-base" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                <div>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                    <div style={{ fontSize: '2rem' }}>{p.logo}</div>
-                    <span className="badge badge-primary">{p.category}</span>
-                  </div>
-
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.25rem', color: 'var(--text-primary)' }}>
-                    {p.name}
-                  </h3>
-                  <div style={{ fontSize: '0.875rem', color: 'var(--text-muted)', marginBottom: '0.75rem' }}>
-                    {p.tagline}
-                  </div>
-                  <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5, marginBottom: '1.25rem' }}>
-                    {p.description}
-                  </p>
-                </div>
-
-                <div>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '0.75rem', borderTop: '1px solid var(--border-subtle)', marginBottom: '1rem' }}>
-                    <span style={{ fontSize: '0.8125rem', fontWeight: 600, color: 'var(--primary-600)' }}>
-                      {p.pricing}
-                    </span>
-                    <span style={{ fontSize: '0.8125rem', color: '#D97706', display: 'flex', alignItems: 'center', gap: '0.25rem', fontWeight: 600 }}>
-                      <Star size={14} fill="#F59E0B" /> {p.rating}
-                    </span>
-                  </div>
-
-                  <button
-                    onClick={() => setSelectedTool(p.originalTool)}
-                    className="btn btn-secondary btn-sm"
-                    style={{ width: '100%' }}
-                  >
-                    Product Details <ArrowRight size={14} />
-                  </button>
-                </div>
+        {/* WEBROOT PRODUCTS SECTION (if any in filter) */}
+        {webrootItems.length > 0 && (
+          <div style={{ marginBottom: '4rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', borderBottom: '2px solid var(--webroot-light)', paddingBottom: '0.75rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                <span className="badge badge-webroot"><ShieldCheck size={16} /> Webroot Suite</span>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)', margin: 0 }}>
+                  Webroot Cybersecurity Products ({webrootItems.length})
+                </h2>
               </div>
-            );
-          })}
-        </div>
+              <Link href="/webroot" className="btn btn-webroot btn-sm" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                View Full Webroot Suite <ArrowRight size={14} />
+              </Link>
+            </div>
+
+            <div className="grid-3">
+              {webrootItems.map((p) => (
+                <WebrootProductCard key={p.id} product={p.originalWebroot} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* CREATIVE & DESIGN TOOLS SECTION WITH RICH VISUAL PREVIEWS */}
+        {creativeItems.length > 0 && (
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem', borderBottom: '2px solid var(--primary-100)', paddingBottom: '0.75rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                <span className="badge badge-primary"><Palette size={16} /> Creative Tools</span>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)', margin: 0 }}>
+                  Design & Creative Software ({creativeItems.length})
+                </h2>
+              </div>
+              <span style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+                Featuring visual interface showcases
+              </span>
+            </div>
+
+            <div className="grid-3">
+              {creativeItems.map((p) => (
+                <ToolCard
+                  key={p.id}
+                  tool={p.originalTool}
+                  onViewDetails={(t) => setSelectedTool(t)}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {filteredProducts.length === 0 && (
+          <div style={{ textAlign: 'center', padding: '4rem 1rem', color: 'var(--text-muted)' }}>
+            No tools or security products found matching &quot;{searchQuery}&quot;.
+          </div>
+        )}
       </section>
 
       {/* Tool Detail Modal */}

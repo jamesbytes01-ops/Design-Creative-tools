@@ -4,6 +4,7 @@ import WebrootProductCard from '@/components/ui/WebrootProductCard';
 import WebrootSecurityAdvisor from '@/components/ui/WebrootSecurityAdvisor';
 import WebrootArchitectureSection from '@/components/ui/WebrootArchitectureSection';
 import WebrootSetupGuide from '@/components/ui/WebrootSetupGuide';
+import WebrootLiveThreatBanner from '@/components/ui/WebrootLiveThreatBanner';
 import { webrootSuiteInfo, webrootProducts } from '@/data/webrootData';
 import styles from './Webroot.module.css';
 
@@ -28,7 +29,7 @@ export default function WebrootPage() {
                   marginBottom: '1.25rem'
                 }}
               >
-                <ShieldCheck size={16} /> Integrated Cybersecurity Portfolio
+                <ShieldCheck size={16} /> Integrated Cybersecurity Ecosystem
               </div>
 
               <h1 className="h1-title" style={{ color: '#ffffff', fontSize: '3rem', marginBottom: '1rem' }}>
@@ -65,8 +66,13 @@ export default function WebrootPage() {
         </div>
       </section>
 
-      {/* 2. WHY WEBROOT FOR CREATIVE WORKFLOWS */}
-      <section className="container" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+      {/* 2. DYNAMIC REAL-TIME THREAT TELEMETRY BANNER */}
+      <section className="container" style={{ marginTop: '-2.5rem', position: 'relative', zIndex: 10, marginBottom: '3rem' }}>
+        <WebrootLiveThreatBanner />
+      </section>
+
+      {/* 3. WHY WEBROOT FOR CREATIVE WORKFLOWS */}
+      <section className="container" style={{ paddingTop: '1rem', paddingBottom: '4rem' }}>
         <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 3rem' }}>
           <div className="badge badge-webroot" style={{ marginBottom: '0.5rem' }}>
             Unobtrusive Architecture
@@ -116,12 +122,12 @@ export default function WebrootPage() {
         </div>
       </section>
 
-      {/* 3. TECHNICAL MECHANICS ("HOW IT WORKS") SECTION */}
-      <section id="architecture" className="container" style={{ paddingTop: '2rem', paddingBottom: '5rem' }}>
+      {/* 4. TECHNICAL MECHANICS ("HOW IT WORKS") SECTION */}
+      <section id="architecture" className="container" style={{ paddingTop: '1rem', paddingBottom: '5rem' }}>
         <WebrootArchitectureSection />
       </section>
 
-      {/* 4. WEBROOT PRODUCTS GRID (CATEGORIZED) */}
+      {/* 5. WEBROOT PRODUCTS GRID (CATEGORIZED WITH VISUAL HEADERS) */}
       <section id="products" className={styles.productsSection} style={{ backgroundColor: 'var(--bg-secondary)', borderTop: '1px solid var(--border-light)', borderBottom: '1px solid var(--border-light)' }}>
         <div className="container">
           <div style={{ marginBottom: '3rem' }}>
@@ -172,12 +178,12 @@ export default function WebrootPage() {
         </div>
       </section>
 
-      {/* 5. INTERACTIVE SETUP, ACCOUNT & USER GUIDES */}
+      {/* 6. INTERACTIVE SETUP, ACCOUNT & USER GUIDES */}
       <section id="setup-guide" className="container" style={{ paddingTop: '5rem', paddingBottom: '5rem' }}>
         <WebrootSetupGuide />
       </section>
 
-      {/* 6. INTERACTIVE SECURITY ADVISOR */}
+      {/* 7. INTERACTIVE SECURITY ADVISOR */}
       <section className="container" style={{ paddingBottom: '5rem' }}>
         <WebrootSecurityAdvisor />
       </section>

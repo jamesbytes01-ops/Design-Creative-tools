@@ -121,11 +121,10 @@ export default function WebrootVisualPreview({ productId, category, name }) {
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
           <span
             style={{
-              width: '8px',
-              height: '8px',
+              width: '6px',
+              height: '6px',
               borderRadius: '50%',
               backgroundColor: config.accentColor,
-              boxShadow: `0 0 8px ${config.accentColor}`,
               display: 'inline-block'
             }}
           />
@@ -136,20 +135,19 @@ export default function WebrootVisualPreview({ productId, category, name }) {
 
         <div
           style={{
-            padding: '0.25rem 0.5rem',
-            borderRadius: 'var(--radius-full)',
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            padding: '0.2rem 0.55rem',
+            borderRadius: 'var(--radius-sm)',
+            backgroundColor: 'rgba(255, 255, 255, 0.08)',
             border: `1px solid ${config.borderColor}`,
-            color: '#FFFFFF',
-            fontSize: '0.7rem',
+            color: '#E2E8F0',
+            fontSize: '0.6875rem',
             fontWeight: 600,
-            backdropFilter: 'blur(4px)',
             display: 'flex',
             alignItems: 'center',
-            gap: '0.25rem'
+            gap: '0.3rem'
           }}
         >
-          <Activity size={12} color={config.accentColor} /> Shield Active
+          <ShieldCheck size={12} color={config.accentColor} /> Endpoint Protection
         </div>
       </div>
 
@@ -175,26 +173,26 @@ export default function WebrootVisualPreview({ productId, category, name }) {
 
           <div>
             <div style={{ fontSize: '0.875rem', fontWeight: 800, color: '#FFFFFF', lineHeight: 1.2 }}>
-              BrightCloud® Protected
+              BrightCloud® Security
             </div>
             <div style={{ fontSize: '0.75rem', color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.25rem', marginTop: '0.15rem' }}>
-              <CheckCircle2 size={12} color={config.accentColor} /> Real-Time Cloud Telemetry
+              <CheckCircle2 size={12} color={config.accentColor} /> Cloud-Native Architecture
             </div>
           </div>
         </div>
 
-        {/* High-Tech Pulse Metric */}
+        {/* Enterprise Spec Metric Badge */}
         <div
           style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.4)',
+            backgroundColor: 'rgba(15, 23, 42, 0.6)',
             border: `1px solid ${config.borderColor}`,
             borderRadius: '6px',
             padding: '0.35rem 0.6rem',
             textAlign: 'right'
           }}
         >
-          <div style={{ fontSize: '0.65rem', color: '#94A3B8', textTransform: 'uppercase', fontWeight: 700 }}>Scan Overhead</div>
-          <div style={{ fontSize: '0.8125rem', fontWeight: 800, color: config.accentColor }}>&lt; 15MB RAM</div>
+          <div style={{ fontSize: '0.625rem', color: '#94A3B8', textTransform: 'uppercase', fontWeight: 700 }}>Spec</div>
+          <div style={{ fontSize: '0.8125rem', fontWeight: 800, color: config.accentColor }}>Sub-15MB RAM</div>
         </div>
       </div>
     </div>

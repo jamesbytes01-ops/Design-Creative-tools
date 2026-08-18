@@ -20,14 +20,14 @@ export default function WebrootSetupGuide() {
     >
       {/* Header Title */}
       <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto 2.5rem' }}>
-        <span className="badge badge-webroot" style={{ marginBottom: '0.75rem' }}>
-          <ShieldCheck size={14} /> Comprehensive Setup & Account Portal
-        </span>
+        <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: 'var(--webroot-primary)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+          Deployment & Documentation
+        </div>
         <h2 className="h2-title" style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
-          Installation, Account Sign-In & User Guides
+          Installation & Account Management Guide
         </h2>
         <p className="sub-text" style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>
-          Step-by-step instructions for new buyers, existing license holders, installation processes, and account management.
+          Step-by-step instructions for endpoint deployment, account sign-in, keycode activation, and device seat transfers.
         </p>
       </div>
 

@@ -1,14 +1,14 @@
 export const webrootSuiteInfo = {
   brandName: "Webroot",
-  headline: "Smart, Cloud-Driven Cybersecurity for Modern Digital Workflows",
-  tagline: "Lightweight, real-time threat intelligence that guards devices, networks, identity, and data without slowing down your system.",
-  description: "Webroot provides advanced cybersecurity and digital protection solutions built to shield consumers, creative professionals, and enterprise organizations against real-time malware, phishing, identity theft, DNS threats, and zero-day ransomware.",
-  badge: "Dedicated Security Ecosystem",
+  headline: "Next-Generation Cloud Endpoint Security & Threat Intelligence",
+  tagline: "Ultra-lightweight protection that secures devices, networks, identity, and confidential data in real-time.",
+  description: "Webroot delivers cloud-native cybersecurity solutions designed for individuals, growing teams, and MSP enterprise environments. Shield endpoints against zero-day ransomware, phishing exploits, DNS vectors, and identity threats with virtually zero system overhead.",
+  badge: "Cloud Security Solutions",
   keyMetrics: [
-    { label: "Cloud Threat Intelligence", value: "Real-Time Cloud Scanning" },
-    { label: "Install Footprint", value: "Lightweight (<15MB)" },
-    { label: "Workflow Impact", value: "Zero CPU Render Lag" },
-    { label: "Global Threat Cloud", value: "95 Billion+ URLs & Files" }
+    { label: "Cloud Threat Intelligence", value: "Real-Time Querying" },
+    { label: "Agent Memory Footprint", value: "< 15 MB RAM" },
+    { label: "Scan Execution Overhead", value: "Sub-Second Response" },
+    { label: "Global Threat Cloud", value: "95 Billion+ Objects" }
   ]
 };
 
@@ -88,8 +88,8 @@ export const webrootProducts = [
     },
     faqs: [
       {
-        question: "Will Webroot slow down high-performance creative software like Photoshop or Blender?",
-        answer: "No. Webroot is specifically engineered with a lightweight agent (under 15MB) that offloads heavy threat processing to the cloud, allowing CPU and GPU to dedicate full power to your active applications."
+        question: "Will Webroot impact workstation CPU performance or battery life?",
+        answer: "No. Webroot operates with a sub-15MB memory agent that offloads threat calculation to the BrightCloud threat intelligence cloud, ensuring zero background lag during intensive local computing tasks."
       },
       {
         question: "Does Webroot work offline?",

@@ -29,7 +29,7 @@ export default function WebrootPage() {
                   marginBottom: '1.25rem'
                 }}
               >
-                <ShieldCheck size={16} /> Integrated Cybersecurity Ecosystem
+                <ShieldCheck size={16} /> Cloud Endpoint Security
               </div>
 
               <h1 className="h1-title" style={{ color: '#ffffff', fontSize: '3rem', marginBottom: '1rem' }}>
@@ -42,13 +42,13 @@ export default function WebrootPage() {
 
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="#products" className="btn btn-webroot btn-lg">
-                  Explore Products ({webrootProducts.length}) <ArrowRight size={18} />
+                  View Solutions ({webrootProducts.length}) <ArrowRight size={18} />
                 </a>
                 <a href="#architecture" className="btn btn-secondary btn-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
-                  How It Works
+                  Architecture Overview
                 </a>
                 <a href="#setup-guide" className="btn btn-secondary btn-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
-                  Setup & Sign In Guide
+                  Deployment & User Guides
                 </a>
               </div>
             </div>
@@ -66,57 +66,57 @@ export default function WebrootPage() {
         </div>
       </section>
 
-      {/* 2. DYNAMIC REAL-TIME THREAT TELEMETRY BANNER */}
+      {/* 2. REAL-TIME THREAT TELEMETRY BANNER */}
       <section className="container" style={{ marginTop: '-2.5rem', position: 'relative', zIndex: 10, marginBottom: '3rem' }}>
         <WebrootLiveThreatBanner />
       </section>
 
-      {/* 3. WHY WEBROOT FOR CREATIVE WORKFLOWS */}
+      {/* 3. CORE ARCHITECTURE HIGHLIGHTS */}
       <section className="container" style={{ paddingTop: '1rem', paddingBottom: '4rem' }}>
-        <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 3rem' }}>
-          <div className="badge badge-webroot" style={{ marginBottom: '0.5rem' }}>
-            Unobtrusive Architecture
+        <div style={{ textAlign: 'left', maxWidth: '720px', marginBottom: '2.5rem' }}>
+          <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: 'var(--webroot-primary)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+            Lightweight Cloud Defense
           </div>
-          <h2 className="h2-title">Engineered Specifically for High-Performance Creators</h2>
-          <p className="sub-text" style={{ fontSize: '1rem', marginTop: '0.35rem' }}>
-            Unlike bloated antivirus software that consumes render threads, Webroot offloads heavy threat processing to the cloud.
+          <h2 className="h2-title" style={{ fontSize: '2.25rem' }}>High-Performance Protection Architecture</h2>
+          <p className="sub-text" style={{ fontSize: '1.05rem', marginTop: '0.5rem', color: 'var(--text-secondary)' }}>
+            Traditional security tools rely on massive local virus signature databases. Webroot offloads heavy file analysis to the BrightCloud threat intelligence cloud for instant protection without device lag.
           </p>
         </div>
 
         <div className="grid-3">
           <div className="card-base card-webroot">
             <div style={{ color: 'var(--webroot-primary)', marginBottom: '1rem' }}>
-              <Zap size={32} />
+              <Zap size={28} />
             </div>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-              Light-Speed Cloud Scanning
+            <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem' }}>
+              Sub-15MB Cloud Agent
             </h3>
             <p style={{ fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Agent installs in seconds with a tiny memory footprint under 15MB, ensuring Photoshop and Blender perform at peak speeds.
+              Installs in seconds with an average RAM footprint under 15MB, ensuring full workstation CPU/GPU rendering resources remain dedicated to active applications.
             </p>
           </div>
 
           <div className="card-base card-webroot">
             <div style={{ color: 'var(--webroot-primary)', marginBottom: '1rem' }}>
-              <ShieldCheck size={32} />
+              <ShieldCheck size={28} />
             </div>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-              Zero-Day Ransomware Rollback
+            <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem' }}>
+              Ransomware Journaling & Rollback
             </h3>
             <p style={{ fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Protects unreleased client designs and proprietary project files with real-time behavioral journaling and rollback defense.
+              Monitors unclassified binaries in a behavioral sandbox, automatically logging system changes and restoring original files if malicious encryption is attempted.
             </p>
           </div>
 
           <div className="card-base card-webroot">
             <div style={{ color: 'var(--webroot-primary)', marginBottom: '1rem' }}>
-              <Lock size={32} />
+              <Lock size={28} />
             </div>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-              Identity & Keylogger Shield
+            <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem' }}>
+              Identity & Browser Sandbox
             </h3>
             <p style={{ fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Encapsulates browser sessions to prevent malware from logging financial details or cloud SaaS passwords.
+              Encapsulates browser sessions and sensitive portals to prevent background keyloggers and screen-grabbers from compromising passwords or financial credentials.
             </p>
           </div>
         </div>
@@ -127,16 +127,16 @@ export default function WebrootPage() {
         <WebrootArchitectureSection />
       </section>
 
-      {/* 5. WEBROOT PRODUCTS GRID (CATEGORIZED WITH VISUAL HEADERS) */}
+      {/* 5. WEBROOT PRODUCTS GRID */}
       <section id="products" className={styles.productsSection} style={{ backgroundColor: 'var(--bg-secondary)', borderTop: '1px solid var(--border-light)', borderBottom: '1px solid var(--border-light)' }}>
         <div className="container">
           <div style={{ marginBottom: '3rem' }}>
-            <div className="badge badge-webroot" style={{ marginBottom: '0.5rem' }}>
-              Complete Portfolio ({webrootProducts.length} Products)
+            <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: 'var(--webroot-primary)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+              Solutions Portfolio ({webrootProducts.length} Products)
             </div>
-            <h2 className="h2-title">Webroot Security Product Ecosystem</h2>
+            <h2 className="h2-title">Webroot Security Product Lineup</h2>
             <p className="sub-text" style={{ fontSize: '1rem', marginTop: '0.35rem' }}>
-              Select from individual antivirus defense to multi-device complete protection, mobile security, and enterprise solutions.
+              Explore desktop antivirus, multi-device complete security, mobile privacy, and enterprise cloud management.
             </p>
           </div>
 

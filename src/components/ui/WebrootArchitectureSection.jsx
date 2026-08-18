@@ -21,7 +21,7 @@ export default function WebrootArchitectureSection() {
         'Threat verdict returned instantly without consuming local RAM or CPU render cycles.',
         'New threats detected anywhere on Earth instantly protect all connected Webroot users.'
       ],
-      impact: 'Zero impact on Photoshop, 3D rendering in Blender, or intense compilation tasks.'
+      impact: 'Zero degradation of CPU/GPU compute, memory bandwidth, or heavy local execution tasks.'
     },
     {
       id: 'journaling',
@@ -37,7 +37,7 @@ export default function WebrootArchitectureSection() {
         'If program performs malicious actions (e.g. encrypting files), it is instantly terminated.',
         'Webroot executes Rollback, undoing all file edits and restoring original uncorrupted files.'
       ],
-      impact: 'Ransomware cannot permanently encrypt or hold client files hostage.'
+      impact: 'Ransomware cannot permanently encrypt or hold workstation files hostage.'
     },
     {
       id: 'dns',
@@ -69,7 +69,7 @@ export default function WebrootArchitectureSection() {
         'Blocks screen-grabber spyware from capturing screen buffer snapshots during entry.',
         'Prevents Man-in-the-Middle (MitM) scripts from hijacking browser authentication cookies.'
       ],
-      impact: 'Ensures cloud login passwords and financial details remain 100% confidential.'
+      impact: 'Ensures account passwords and financial details remain 100% confidential.'
     }
   ];
 
@@ -89,14 +89,14 @@ export default function WebrootArchitectureSection() {
     >
       {/* Header */}
       <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto 2.5rem' }}>
-        <span className="badge badge-webroot" style={{ marginBottom: '0.75rem' }}>
-          <Cpu size={14} /> Technical Mechanics
-        </span>
+        <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: 'var(--webroot-primary)', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+          Architecture Deep-Dive
+        </div>
         <h2 className="h2-title" style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
-          How Webroot Works Under the Hood
+          How Webroot Operates Under the Hood
         </h2>
         <p className="sub-text" style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>
-          Discover how Webroot delivers enterprise protection without the heavy system slowdowns typical of legacy antivirus software.
+          Discover how Webroot delivers enterprise-grade endpoint security without the heavy memory slowdowns typical of legacy antivirus suites.
         </p>
       </div>
 

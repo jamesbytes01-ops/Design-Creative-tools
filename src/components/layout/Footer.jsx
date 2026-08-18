@@ -73,8 +73,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Design & Creative Tools Platform with Integrated Security. All rights reserved. Webroot logos and product names are trademarks of OpenText / Webroot Inc.
           </div>
           <div className={styles.legalLinks}>
-            <Link href="/about">Privacy Policy</Link>
-            <Link href="/about">Terms of Service</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
             <Link href="/contact">Support</Link>
           </div>
         </div>
